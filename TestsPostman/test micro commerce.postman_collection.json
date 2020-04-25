@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "e7553384-c1b0-41d7-8345-b19198879d34",
+		"name": "test micro commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9090/calculerMargeProduit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"nom\": \"Nouveau produit crée\",\r\n        \"prix\": 750,\r\n        \"prixAchat\": 400\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/calculerMargeProduit",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"calculerMargeProduit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/trierProduitsParOrdreAlphabetique",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"nom\": \"Nouveau produit crée\",\r\n        \"prix\": 750,\r\n        \"prixAchat\": 400\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/trierProduitsParOrdreAlphabetique",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"trierProduitsParOrdreAlphabetique"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/Produits",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 5,\r\n        \"nom\": \"Produit gratuit\",\r\n        \"prix\": 0,\r\n        \"prixAchat\": 400\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/Produits",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
